@@ -4,14 +4,14 @@ type CloudProviderConnection struct {
   Provider string
   Account  string
   Profile  string
-  Region   string
+  Regions  []string
 }
 
 type ProjectWorkspace struct {
   ProjectID  string
   Name       string
   Providers  []CloudProviderConnection
-  IsPublic   bool
   OwnerID    string
-  TeamIDs    []string
+  MemberIDs  []string
+  IsPublic   bool
 }
